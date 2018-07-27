@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<servicecaller defaulturl="http://localhost:8080/codereview_service/">
+
+	<!-- 这里还可以配置其他的服务server, 实现service的分布式调用 -->
+
+</servicecaller>

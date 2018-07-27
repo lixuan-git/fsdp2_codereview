@@ -1,0 +1,77 @@
+*{margin: 0;padding: 0;}
+body{ color: #333;font: 13px/21px Microsoft YaHei;}
+ul{ list-style:none;}
+a{ text-decoration:none;}
+img{border:0 none;}
+.fl{float:left; display:inline;}
+.fr{float:right; display:inline;}
+.clear{clear:both;}
+.main{ padding:10px;}
+.pp-btn{ text-align: right; padding:15px; padding-bottom: 0; overflow: hidden;}
+.p-btn3{  text-align: right;padding-bottom: 0 !important; }
+.pp-btn-add{  padding-bottom:0; padding-right: 0;}
+.pp-btn .btn-t{  background:#56c3ff; color:#fff;  border:none;  display:inline-block; cursor: pointer; padding:5px 10px;border-radius:4px;}
+.pp-btn .sear{ width:74%; height:30px; line-height: 30px; border:1px solid #ebebeb; padding: 0 5px; box-sizing: border-box; border-color: darkgray;}
+.pp-btn .btn-sear{  margin-left: 5%; text-align: center;  width:21%; height:30px; line-height: 30px; padding:0; }
+.pp-btn .btn-del{ background: #ff7f18; margin-right: 3%;  cursor: pointer;}
+.pp-btn .btn-new{  margin-left: 4%;  }
+.pp-btn-add .btn-add{ border-radius:5px 5px 0 0;  cursor: pointer; }
+.btn-add{ border-radius:5px 5px 0 0;  cursor: pointer; }
+.btn-del{ background: #ff7f18; margin-right: 3%;  cursor: pointer;}
+.pp-btn .btn-del2{ background: #ff7f18; margin-left: 4%;  cursor: pointer;}
+.mamin-con{ padding:15px;}
+.main-table{ width:100%; }
+.main-table tr td .icon{ width:13px; margin:0 5px; }
+.main-table tr td{  border-bottom:1px solid #ebebeb; height: 40px; line-height: 40px; text-align: center;}
+.main-table tr .td1{ width:5%;  padding-left: 2%; box-sizing: border-box;}
+.main-table tr .td2{ width:95%;}
+.main-table tr .td2 span{ width:15%; display: inline-block;}
+.main-table tr .td-user{ cursor: pointer;}
+.main-table tr th{ background: #f2f2f2; border-bottom:1px solid #ebebeb; height: 35px; line-height: 35px; color:#333; text-align: center;}
+.main-table tr:hover{ background: #f4fafd;}
+.main-table tr .td-top{ padding-left: 23px;}
+.main-table tr td input{ vertical-align: middle;}
+.main-table tr .td-name{ color:#56c3ff;}
+/*新建*/
+.new-table{ width:100%;  }
+.new-table tr td{ padding-top:10px;  height:30px; line-height: 30px;}
+.new-table tr .add-td1{ width:15%; text-align: left;}
+.new-table tr .add-td2{  width:40%;}
+.new-table tr .add-td2 .add-text{ width:100%; box-sizing: border-box; border:1px solid #ddd; border-radius: 5px; height:28px; line-height: 40px; padding: 0 10px;border-color: darkgray;}
+.new-table tr .add-td2 .add-textarea{ width:100%; box-sizing: border-box; border:1px solid #ddd; border-radius: 5px;  line-height: 30px; padding: 0 5px; border-color: darkgray;}
+.new-table tr .td3{ color:#ff7f18;}
+.main-btn{ text-align: center; margin-top: 10px;}
+.main-btn .btn{  font-size: 13px; text-align: center; border-radius: 5px; border:none;  height:30px; line-height:30px; padding: 0 20px;  color:#fff;}
+.main-btn .main-btn1{ background: #56c3ff;}
+.main-btn .main-btn2{ background: #ff7f18;margin-left: 9%; }
+
+/*分页*/
+.page{ text-align: right;}
+.page-sel{ width: 42px; height: 24px; border: 1px solid #ddd; outline: none; color: #aaa;}
+.page-text{ width: 42px;height: 22px; border: 1px solid #ddd; outline: none; color: #aaa;}
+.page-btn{ background: #f4f4f4; width: 42px;  height: 24px; border: 1px solid #ddd; outline: none; color: #1c2f61; cursor: pointer;}
+.page span{ color: #56c3ff;}
+
+.sys-con-main{ box-sizing: border-box; padding: 20px; background: #fff;}
+.search-btn{ text-align: center; width: 100%; box-sizing: border-box;  border-bottom: 1px solid #ddd; padding-bottom: 20px;}
+.com-btn{ background: #699cfc; outline:none; border:none; color: #fff; padding: 6px 20px; cursor: pointer;}
+.gys-text{ padding: 6px 0; box-sizing: border-box; border: 1px solid #ddd; padding-left: 6px; width: 370px; margin-right: 10px; color: #555; background: url(../images/coin9.png) 99% center no-repeat;}
+/*引入页面*/
+.Dmain-l{ float: left; width: 28%; background: #fff; padding-bottom: 15px; border-radius: 8px; border: 1px solid #ccc;margin-left: 1%;}
+.Dmain-lt{position:relative;width: 100%; height: 40px; background: #6dd1fb; border-top-left-radius: 8px; border-top-right-radius: 8px; text-align: center; line-height: 40px; color: #fff; font-size: 16px;}
+.Dmain-lt img{ vertical-align: -2px; margin-right: 7px;}
+.Dmain-lc{ font-size: 0; width: 100%; line-height:40px; border-bottom: 1px solid #dedede; text-align: center; color: #333; box-sizing: border-box; padding: 5px 0;}
+.Dmain-lc span{ font-size: 12px;}
+.Dmain-r{ float: right; width: 68%; background: #fff; padding-bottom: 15px; border-radius: 8px; border: 1px solid #ccc;margin-right: 1%;}
+
+/*弹框*/
+.box{ width: 100%; position: fixed; top: 0; bottom: 0; background: rgba(0,0,0,.6); z-index: 9999; }
+.box-con{ width: 614px; background: #fff; border-radius: 5px; position: fixed; bottom: 0; right: -614px; border:1px solid #ebebeb;}
+.box-con-del{ width: 30%; margin: 10% auto; background: #fff; border-radius: 5px;  position: relative;}
+.box-del,.box-del-add,.box-del-s{ position: absolute; top: 14px; right: 10px;; width:22px; z-index: 999999; cursor: pointer;}
+.box-title{ background:#56c3ff; color:#fff; text-align: center; height:50px; line-height: 50px; font-size:14px;  border-radius: 5px 5px 0 0;  position: relative;}
+.box-content{ padding: 20px 20px;}
+.map-btn{ margin:0 20px; text-align: center; border-top:1px solid #ebebeb; padding:20px 0;}
+.map-born{ border-top:none; padding-top: 0;}
+.map-btn .map-btn3{ padding: 0 30px; background: #ff7f18; color:#fff; font-size: 13px; text-align: center; border-radius: 5px; border:none; height:40px; line-height:40px;}
+.map-btn .map-btn4{  padding: 0 30px;background: #56c3ff;; color:#fff; font-size: 13px; text-align: center; border-radius: 5px; border:none;  height:40px; line-height:40px; margin-left: 9%;}

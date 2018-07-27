@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<webapp>
+	<!-- URL重写配置，前台请求过来的action,根据配置跳转到另一个action-->
+	<actions>
+		<!-- action uri="/test/devlogin" rewriteuri="/finedo/auth/developerlogin"></action> -->
+	</actions>
+</webapp>

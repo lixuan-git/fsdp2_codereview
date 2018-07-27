@@ -1,0 +1,18 @@
+.edit{ width:100%; }
+.edit table{ width:100%; border-collapse:collapse; border:1px solid #e8e8e8; background:#f8f8f8; font-family:Microsoft Yahei, SimSun; font-size:12px; color:#000; }
+.edit table td{ padding:5px 0; border-bottom:1px solid #e8e8e8; } 
+.edit table .edit-name{ width:100px; padding-left:10px; background:#fff; }
+.edit table .edit-text{ width:50%; height:30px; border:1px solid #dadada; line-height:30px; outline:none; background:#fff; padding:0 5px; margin-left:10px; font-family:Microsoft Yahei, SimSun; font-size:12px; color:#000; }
+.edit table .edit-text:focus{ border:1px solid #30b5ff; }
+.edit table .edit-textarea{ float:left; width:50%; height:60px; border:1px solid #dadada; outline:none; line-height:24px; background:#fff; padding:0 5px; margin-left:10px; font-family:Microsoft Yahei, SimSun; font-size:12px; color:#000; }
+.edit table .edit-textarea:focus{ border:1px solid #30b5ff; }
+.edit table .edit-browse{ margin:0 10px; background:#30b5ff; height:30px; padding:0 15px; cursor:pointer; outline:none; border:none; color:#fff; font-family:Microsoft Yahei, SimSun; font-size:12px; }
+.edit table .edit-browse:hover{ background:#00c0aa; }
+.edit table span{ color:#f00; padding-left:10px; }
+.edit-btn{ width:100%; text-align:center; margin-top:30px; }
+.edit-btn-add{ margin:0 10px; background:#30b5ff; height:35px; padding:0 40px; cursor:pointer; outline:none; border:none; color:#fff; font-family:Microsoft Yahei, SimSun; font-size:12px; }
+.edit-btn-add:hover{ background:#00c0aa; }
+.edit-btn-del{ margin:0 10px; background:#ffa800; height:35px; padding:0 20px; cursor:pointer; outline:none; border:none; color:#fff; font-family:Microsoft Yahei, SimSun; font-size:12px; }
+.edit-btn-del:hover{ background:#ed9c01; }
+.title{ float:left; wifth:100%; margin:10px 0; }
+.title-name{ float:left; margin:10px 0; padding-right:10px; border-left:3px solid #0085d0; text-indent:10px; }

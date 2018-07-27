@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<service>
+	<!-- token管理：local/redis -->
+	<tokenmananger>local</tokenmananger>
+
+	<!-- 服务监控开关： true 打开    false 关闭 -->
+	<servicemonitor>false</servicemonitor>
+	
+	<!--  JDBC SQL监控开关： true 打开    false 关闭 -->
+	<jdbcmonitor>false</jdbcmonitor>
+	
+	<!-- 日志级别： DEBUG INFO ERROR -->
+	<loglevel>ERROR</loglevel>
+	
+	<!-- 数据更新时是否备份标识：yes/no/config，yes为全部，no为全部不备份，config为按配置的表名备份 -->
+	<updatebackup>no</updatebackup>
+
+	<!-- 配置哪些服务接口不需要token验证 -->
+	<notokenauth>
+		<serviceap name="/service/codereview/login/auth"/>
+		<serviceap name="/service/codereview/login/queryalluser"/>
+		<!-- FSDP2.0框架定义的nosession action, 请勿修改 -->
+		<!-- 登录 -->
+		<serviceap name="/service/finedo/login/localauth"/>
+		<serviceap name="/service/finedo/login/ssolocalauth"/>
+		<serviceap name="/service/finedo/login/devlocalauth"/>
+		<!--第三方账号登录-->
+		<serviceap name="/service/finedo/login/openauth"/>
+		<serviceap name="/service/finedo/login/qqlogin"/>
+		<serviceap name="/service/finedo/login/weibologin"/>
+		<serviceap name="/service/finedo/login/weixinlogin"/>
+		<!--上传App报错日志-->
+		<serviceap name="/service/finedo/login/addAppLog"/>
+		
+		<!-- 密码修改 -->
+		<serviceap name="/service/finedo/config/modifypassword"/>
+		
+		<!-- 单点登录 -->
+		<serviceap name="/service/finedo/sso/auth"/>
+		<serviceap name="/service/finedo/sso/openauth"/>
+		<serviceap name="service/finedo/sso/queryauthbytoken"/>
+		<serviceap name="service/finedo/sso/queryauthbysessionid"/>
+		
+		<!-- 获取图形验证码 -->
+		<serviceap name="/service/finedo/oper/graphicscode"/>
+		<serviceap name="/service/finedo/oper/smscode"/>
+		<serviceap name="/service/finedo/oper/validation"/>
+		<!-- 系统初始化-->
+		<serviceap name="/service/finedo/login/sysinit"/>
+		
+		<!-- APP更新检测-->
+		<serviceap name="/service/finedo/app/check"/>
+		
+		<!-- 静态化-->
+		<serviceap name="/service/finedo/html/queryStaticConfig"/>
+		<serviceap name="/service/finedo/html/queryIdsource"/>
+		<serviceap name="/service/finedo/html/queryStaticPlan"/>
+		<serviceap name="/service/finedo/html/queryStaticJob"/>
+		<serviceap name="/service/finedo/html/addStaticJob"/>
+		<serviceap name="/service/finedo/html/deleteStaticJob"/>
+		<serviceap name="/service/finedo/html/updateStaticPlan"/>
+		
+		<!-- 跨域配置数据加载 -->
+		<serviceap name="/service/finedo/cross/querycross"/>
+				
+		<!-- 文件上传下载 -->
+		<serviceap name="/service/finedo/file/query"/>
+		<serviceap name="/service/finedo/file/upload"/>
+		<serviceap name="/service/finedo/file/delete"/>
+		<serviceap name="/service/finedo/file/download"/>
+		<serviceap name="/service/finedo/file/downloadmulti"/>
+		<serviceap name="/service/finedo/id/queryid"/>
+		
+		<!-- 微信签名 -->
+		<serviceap name="/service/finedo/weixin/querysign"/>	
+		
+		<!-- 测试 -->
+		<serviceap name="/service/finedo/example/groupquery"/>	
+		
+		<!-- 帮助请求页面 -->
+		<serviceap name="/service/codereview/help/query"/>
+		<serviceap name="/service/codereview/paper/querypd"/>
+		<serviceap name="/service/codereview/paper/querylist"/>
+		
+		<serviceap name="/service/finedo/syspwdsms/smssend"/>
+		<serviceap name="/service/finedo/sysmsg/sendmsg"/>
+		<serviceap name="/service/finedo/weixin/querybind"/>
+		<serviceap name="/service/finedo/weixin/binduser"/>
+		<serviceap name="/service/finedo/weixin/unbinduser"/>
+		
+		<!-- svn同步 -->
+		<serviceap name="/service/finedo/svnmng/syncpermission"/>
+		<serviceap name="/service/finedo/svnmng/query"/>
+		
+		<!-- 查询TOP10黑板报 -->
+		<serviceap name="/service/codereview/paper/querytopten"/>
+		<!-- 报表验证权限接口 -->
+		<serviceap name="/service/finedo/svnmng/validateuserforreport"/>
+		<!-- 生成默认小组-->
+		<serviceap name="/service/finedo/svnlog/syncgroup"/>
+		<!-- 生成默认小组的权限表-->
+		<serviceap name="/service/finedo/svnlog/syncgroupauth"/>
+		<serviceap name="/service/finedo/svnlog/syncforcount"/>
+		<serviceap name="/service/finedo/svnlog/selfcheck"/>
+		
+		<!-- 测试回滚-->
+		<serviceap name="/service/finedo/thirdparty/mytest"/>
+		<serviceap name="/service/finedo/abc/testabc"/>
+		
+		<serviceap name="/service/finedo/thirdparty/syncproject"/>
+		<serviceap name="/service/finedo/thirdparty/syncuser"/>
+	</notokenauth>
+	
+</service>

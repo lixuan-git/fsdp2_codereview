@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<webapp>	
+	<!-- token管理：local/redis -->
+	<tokenmananger>local</tokenmananger>
+	<!-- 开发者模式 
+	<developmoudle>yes</developmoudle>
+	-->
+	<!-- 配置哪些Action不需要session验证 -->
+	<nosession>
+		<actions>
+			<action name="/finedo/codereview/login/auth"/>
+			<action name="/finedo/auth/todo"/>
+			
+			<!-- FSDP2.0框架定义的nosession action, 请勿修改 -->
+			<!-- 登录 -->
+			<action name="/finedo/auth/codereviewlogin"/>
+			<action name="/finedo/auth/ssoauth"/>
+			<action name="/finedo/auth/loginindex"/>
+			<action name="/finedo/auth/login"/>
+			<action name="/finedo/auth/qqlogin"/>
+			<action name="/finedo/auth/weibologin"/>
+			<action name="/finedo/auth/httplogin"/>
+			<action name="/finedo/codereview/login/loginindex"/>
+			
+			<action name="/finedo/auth/ssologinindex"/>
+			<action name="/finedo/auth/ssologin"/>
+			<!-- 错误页面 -->
+			<action name="/finedo/auth/403"/>
+			<action name="/finedo/auth/404"/>
+			<action name="/finedo/auth/500"/>
+			<action name="/finedo/auth/illegal"/>
+			<!-- 密码修改 -->
+			<action name="/finedo/config/updatepasswd"/>
+			<action name="/finedo/config/modifypassword"/>
+			
+			<!-- 获取图形验证码 -->
+			<action name="/finedo/oper/graphicscode"/>
+			<action name="/finedo/oper/smscode"/>
+			
+			<!-- ueditor文件下载 -->
+			<action name="/finedo/file/ueditordownload"/>
+			<action name="/finedo/file/download"/>
+			
+			<!-- ueditor配置 -->
+			<action name="/resource/js/ueditor/jsp/controller.jsp"/>
+						
+			<!-- 项目自定义nosession action -->
+			<!-- 非法请求页面 -->
+			<action name="/common/error-pages/illegal.jsp"/>
+			
+			<!-- 微信签名 -->
+			<action name="/finedo/weixin/querysign"/>
+			<!-- 帮助请求页面 -->
+			<action name="/finedo/codereview/help/query"/>
+			<action name="/finedo/codereview/paper/detail"/>
+			<action name="/codereview/frame/tools"/>
+			<action name="/jsp/weixin/weixinuserbind.jsp"/>
+			
+			<!-- 微信账号绑定 -->
+			<action name="/finedo/codereview/weixin/openbind"/>
+			<action name="/codereview/jsp/weixin/weixinuserbind.jsp"/>
+			<action name="/finedo/codereview/weixin/binduser"/>
+			<action name="/finedo/codereview/weixin/unbinduser"/>
+			
+			<!-- svn权限同步 -->
+			<action name="/finedo/usergrouprel/query"/> 
+			<action name="/finedo/svnmng/createproject"/> 
+			<action name="/finedo/auth/ssoauth"/>
+		</actions>
+		
+		<resources>
+			<resource name="js"/>
+			<resource name="css"/>
+			<resource name="gif"/>
+			<resource name="jpg"/>
+			<resource name="png"/>
+			<resource name="xlsx"/>
+			<resource name="xls"/>
+			<resource name="doc"/>
+			<resource name="docx"/>
+			<resource name="ppt"/>
+			<resource name="pptx"/>
+			<resource name="swf"/>
+			<resource name="apk"/>
+			<resource name="plist"/>
+			<resource name="ipa"/>
+			<resource name="html"/>
+			<resource name="ico"/>
+		</resources>
+	</nosession>
+</webapp>

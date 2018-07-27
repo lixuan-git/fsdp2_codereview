@@ -1,0 +1,31 @@
+@charset "utf-8";
+* { margin:0; padding:0; }
+body{ background:#fff; font-family:Microsoft Yahei,SimSun; }
+a{ text-decoration:none; }
+input[type="checkbox"]{ vertical-align:-2px;  margin-right:5px; }
+input[type="button"]{ cursor:pointer; outline:none;-webkit-appearance: none; }
+
+/*--------登录页面--------*/
+.login-head{ float:left; width:100%; border-bottom:1px solid #e3e3e3; }
+.lh-con{ width:866px; margin:20px auto; font-size:18px; color:#696969; } 
+.login-logo{ vertical-align:middle; padding-right:20px; }
+.login-con{ float:left; width:100%; }
+.mid{ width:866px; margin:50px auto; }
+.mid-page{ width:335px; float:left;}
+.mid-con{ float:right; width:285px; height:330px; padding:0 15px; border-top:2px solid #09a9ec; border-bottom:1px solid #e3e3e3; border-left:1px solid #e3e3e3; border-right:1px solid #e3e3e3; font-family:SimSun,Microsoft Yahei; color:#4d4d4d; position:relative; }
+.mid-con p{ padding-bottom:8px; font-size:14px; }
+.mid-con .cheak{ padding-top:5px; font-size:13px; color:#bebebe; display:inline-block; }
+.login-name{ width:100%; margin-bottom:8px; border-bottom:1px solid #e3e3e3; line-height:40px; font-size:14px; text-align:center; }
+.mid-name{ margin-top:20px; }
+.text-name{ width:88%; height:35px; border:1px solid #e3e3e3; background:url(../images/login_name.png) 10px center no-repeat #fff; font-size:13px; color:#bebebe; padding-left:12%; line-height:36px; }
+.text-name:hover{ border:1px solid #84dbff; }
+.text-psd{ width:88%; height:35px; border:1px solid #e3e3e3; background:url(../images/login_psd.png) 10px center no-repeat #fff; font-size:13px; color:#bebebe; padding-left:12%; line-height:36px; }
+.text-psd:hover{ border:1px solid #84dbff; }
+.text-verify{ width:88%; height:35px; border:1px solid #e3e3e3; background:url(../images/login_num.png) 10px center no-repeat #fff; font-size:13px; color:#bebebe; padding-left:12%; line-height:36px; }
+.text-verify:hover{ border:1px solid #84dbff; }
+.mid-btn{ position:absolute; bottom:20px; left:20px; right:20px; }
+.login-btn{ width:100%; height:35px; background:#00a6eb; border:1px solid #009bdc; color:#fff; font-weight:700; font-size:14px; }
+.login-btn:hover{ border:1px solid #eba000; background:#ff9c00;}
+.copy{ float:left; width:100%; margin-top:50px; border-top:5px solid #eee; background:#f4f4f4; padding:20px 0; text-align:center; line-height:24px; font-size:12px; color:#a8a8a8; }
+.copy a{ color:#6a6a6a; }
+.copy a:hover{ color:#09a9ec; }

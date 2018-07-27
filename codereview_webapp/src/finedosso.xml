@@ -1,0 +1,5 @@
+<cas>
+	<!-- 该回调服务用于构建应用系统自己的LoginDomain对象，如：1）补充用户权限信息；2）建立service层的token缓存 -->
+	<!-- FSDP单点统一认证完成后回调的服务Ap，输入：String userid，输出:LoginDomain logindomain-->
+	<ssologinurl>service/finedo/login/ssolocalauth</ssologinurl>
+</cas>
